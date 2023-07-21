@@ -25,12 +25,12 @@
     }
   }
 
-.iframe-inspector {
+#iframe-inspector {
     height:300px;
     width: 400px;
     float: middle;
 }
-.iframe-main {
+#iframe-main {
     height:600px;
     width: 800px;
     float: middle;

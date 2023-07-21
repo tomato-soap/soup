@@ -8,6 +8,8 @@
 .column {
     float: left;
     padding: 10px;
+    height: 520px;
+    display: table-cell;
   }
 
 /* Clear floats after the columns */
@@ -15,6 +17,7 @@
 content: "";
 display: table;
 clear: both;
+display: table;
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
@@ -27,17 +30,19 @@ clear: both;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 480px;
+    height: 500px;
 }
 
 #iframe-inspector {
     height:240px;
     width: 320px;
     float: middle;
+    border: 0
 }
 #iframe-main {
     height:240px;
     width: 320px;
+    border: 0
 
 }
 #marquee-ads {

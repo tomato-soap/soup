@@ -8,46 +8,51 @@
 </head>
 
 <body>
-<div class="row">
-<div class="column"  width="40%">
-    <h1>soup</h1>
-    <div class="navigation">
-        <img src="sitemap.png" alt="tv city" />
-            <!--<ul>
-            <li>tourist's guide</li>
-            <li>places
-            <ul>
-                <li>archives</li>
-                <li>cinema</li>
-                <li><a href="places/gallery/gallery-main.html" target="iframe-main">gallery</a></li>
-            <li><a href="places/library/library-main.html" target="iframe-main">library</a></li>
-            <li>notice board</li>
-            <li>temple</li>
-            <li>town square</li>
-        </ul>
-        </li>
-        <li>employee portal
-            <ul>
-            <li>announcements</li>
-            <li>the team</li>
-            <li>logs</li>
-            </ul>
-        </li>
-    </ul>-->
-    </div> 
-</div>
-
-<div class="column" width="60%">
-    <marquee id="marquee-ads">
-        <img src="ads/linux_powered.gif" width="88px" height="31px" alt="tv city" />
-        <img src="ads/phonechump.gif" width="88px" height="31px" alt="tv city" />
-
-    </marquee>
-    <br><br>
-    <div style="text-align:center"><iframe src="demo_iframe.htm" name="iframe-main" id="iframe-main" title="Iframe Example"></iframe></div>
-    <div style="text-align:center"><iframe src="inspector-default.png" id="iframe-inspector" frameBorder="0" name="iframe-inspector" title="Iframe Example"></iframe></div>
-</div>
-</div>
+    <p>
+        <marquee id="marquee-ads">
+            <img src="ads/linux_powered.gif" width="88px" height="31px" alt="tv city" />
+            <img src="ads/phonechump.gif" width="88px" height="31px" alt="tv city" />
+        </marquee>
+    </p>
+    <div class="row">
+            <div class="column">
+                <div class="navigation">
+                <img src="sitemap.png" alt="site map" usemap="#image-map">
+                <map name="image-map">
+                    <area target="iframe-main" alt="tourist's guide" title="tourist's guide" href="places/guide.html" coords="276,28,277,58,289,47,296,52,308,45,308,11,295,19,289,16" shape="poly">
+                    <area target="iframe-main" alt="library" title="library" href="places/library/library-main.html" coords="184,104,196,110,196,119,180,125,170,129,170,138,170,149,160,155,128,140,127,112,161,92,176,84,235,86,234,103" shape="poly">
+                <area target="iframe-main" alt="archives" title="archives" href="places/archives/archives-main.html" coords="174,133,193,122,204,125,205,115,269,115,266,132,222,134,218,142,216,149,202,141,184,152,174,148" shape="poly">
+                <area target="iframe-main" alt="video store" title="video store" href="places/video-store/video-store-main.html" coords="171,185,171,172,124,173,124,158,180,157,202,145,237,165,233,182,220,192,201,199" shape="poly">
+                <area target="iframe-main" alt="gallery" title="gallery" href="places/gallery/gallery-main.html" coords="24,167,55,153,51,127,27,112,72,109,72,89,8,89,6,108,22,114,2,122,0,153" shape="poly">
+                </map>
+                    <!--<ul>
+                    <li>tourist's guide</li>
+                    <li>places
+                    <ul>
+                        <li>archives</li>
+                        <li>cinema</li>
+                        <li><a href="places/gallery/gallery-main.html" target="iframe-main">gallery</a></li>
+                    <li><a href="places/library/library-main.html" target="iframe-main">library</a></li>
+                    <li>notice board</li>
+                    <li>temple</li>
+                    <li>town square</li>
+                </ul>
+                </li>
+                <li>employee portal
+                    <ul>
+                    <li>announcements</li>
+                    <li>the team</li>
+                    <li>logs</li>
+                    </ul>
+                </li>
+            </ul>-->
+                </div> 
+            </div>
+            <div class="column" style="border-style: solid; border-width: thin; border-color: rgb(255, 255, 255);">
+                <div style="text-align:center"><iframe src="places/guide.html" name="iframe-main" id="iframe-main" title="Iframe Example"></iframe></div>
+                <div style="text-align:center"><iframe src="inspector-default.png" id="iframe-inspector" name="iframe-inspector" title="Iframe Example"></iframe></div>
+            </div>
+        </div>
 </body>
 
 </html>

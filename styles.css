@@ -8,7 +8,6 @@
 .column {
     float: left;
     padding: 10px;
-    height: 100%; /* Should be removed. Only for demonstration */
   }
   
   /* Clear floats after the columns */
@@ -26,14 +25,15 @@
   }
 
 #iframe-inspector {
-    height:300px;
-    width: 400px;
+    height:240px;
+    width: 90%;
     float: middle;
 }
 #iframe-main {
-    height:600px;
-    width: 800px;
-    float: middle;
+    height:360px;
+    width: 480px;
 }
-
+#marquee-ads {
+    height:31px;
+}
 html {background-color: rgb(242, 234, 246)} 

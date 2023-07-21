@@ -9,31 +9,52 @@
     float: left;
     padding: 10px;
   }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-    }
-  }
+
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+.column {
+    width: 100%;
+}
+}
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 480px;
+}
 
 #iframe-inspector {
     height:240px;
-    width: 90%;
+    width: 320px;
     float: middle;
 }
 #iframe-main {
-    height:360px;
-    width: 480px;
+    height:240px;
+    width: 320px;
+
 }
 #marquee-ads {
     height:31px;
 }
-html {background-color: rgb(242, 234, 246)} 
+
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+    background-color: rgb(242, 234, 246)
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
